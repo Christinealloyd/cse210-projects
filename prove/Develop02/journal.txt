@@ -1,0 +1,2 @@
+Date,Prompt,Response,Mood,Location,Tags
+2024-11-11 12:47:26,Who was the most interesting person I interacted with today?,my husband,okay,home,"home, office"

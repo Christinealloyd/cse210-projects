@@ -1,0 +1,2 @@
+Date,Prompt,Response,Mood,Location,Tags
+2024-11-11 12:45:26,What was the best part of my day?,my day was waking up and breathing,sad,home,"sad, morning"
