@@ -7,7 +7,7 @@ public class Reference
     public string StartVerse { get; set; }
     public string EndVerse { get; set; }
 
-    // Constructor for single reference
+    
     public Reference(string referenceText)
     {
         this.ReferenceText = referenceText;
@@ -15,7 +15,7 @@ public class Reference
         ParseReference();
     }
 
-    // Constructor for range of verses
+   
     public Reference(string startVerse, string endVerse)
     {
         this.StartVerse = startVerse;
@@ -24,7 +24,7 @@ public class Reference
         this.ReferenceText = $"{startVerse}-{endVerse}";
     }
 
-    // Parse reference to extract start and end verses
+    
     private void ParseReference()
     {
         if (this.IsRange)
@@ -35,7 +35,7 @@ public class Reference
         }
     }
 
-    // Returns formatted reference
+   
     public string GetFormattedReference()
     {
         return this.ReferenceText;

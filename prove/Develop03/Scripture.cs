@@ -7,7 +7,7 @@ public class Scripture
     public List<Word> Words { get; set; }
     public bool AllWordsHidden { get; private set; }
 
-    // Constructor for single or range verses
+  
     public Scripture(string reference, List<string> scriptureText)
     {
         this.Reference = new Reference(reference);
@@ -19,7 +19,7 @@ public class Scripture
         this.AllWordsHidden = false;
     }
 
-    // Constructor for scripture with text and reference
+    
     public Scripture(string reference, string verseText)
     {
         this.Reference = new Reference(reference);
@@ -31,7 +31,7 @@ public class Scripture
         this.AllWordsHidden = false;
     }
 
-    // Displays the full or partially hidden scripture
+    
     public void DisplayScripture()
     {
         Console.Clear();
@@ -44,7 +44,7 @@ public class Scripture
         Console.WriteLine();
     }
 
-    // Hide random words in the scripture
+    
     public void HideRandomWords()
     {
         Random rand = new Random();
@@ -60,11 +60,12 @@ public class Scripture
         }
     }
 
-    // Check if all words are hidden
+    
     public bool AreAllWordsHidden()
     {
         return this.AllWordsHidden;
     }
 }
 
+ 
     
