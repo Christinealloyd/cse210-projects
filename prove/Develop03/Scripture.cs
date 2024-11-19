@@ -60,11 +60,28 @@ public class Scripture
         }
     }
 
-    
+    ////for exceeding creativity added Hint feature  to the program that allows users to reveal one word at a time when they get stuck.
     public bool AreAllWordsHidden()
     {
         return this.AllWordsHidden;
     }
+
+    public void RevealRandomHiddenWord()
+{
+    List<Word> hiddenWords = this.Words.FindAll(w => w.IsHidden);
+    if (hiddenWords.Count > 0)
+    {
+        Random rand = new Random();
+        int index = rand.Next(hiddenWords.Count);
+        hiddenWords[index].IsHidden = false; 
+        Console.WriteLine($"Hint: The word '{hiddenWords[index].WordText}' has been revealed.");
+    }
+    else
+    {
+        Console.WriteLine("All words are already revealed!");
+    }
+}
+
 }
 
  
